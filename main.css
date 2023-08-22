@@ -200,6 +200,10 @@ a {
     color: transparent;
 }
 
+.p-span{
+    font-weight: bold;
+}
+
 .hero__paragraph {
     max-width: 50rem;
     text-align: center;
@@ -433,7 +437,6 @@ body.dark .hero__birds {
     max-width: 280px;
     width: 100%;
     margin: 0 auto;
-    min-height: 100vh;
 }
 
 .blog__texts {
@@ -563,6 +566,10 @@ body.dark .nav__link:hover {
 
 body.dark .stroke-text {
     text-shadow: 0px 0px 20px rgba(235, 88, 116, 0.8);
+}
+
+body.dark .p-span{
+    color: var(--primary-color);
 }
 
 body.dark .cta {
@@ -876,19 +883,18 @@ body.dark .cta {
         gap: 3rem;
     }
     .blog__figure {
-        width: 100%;
+        width: 60%;
     }
 
     .blog__img {
         min-width: 280px;
         max-width: 380px;
         width: 100%;
-        min-height: 100%;
     }
 
     .blog__texts {
         display: flex;
-        gap: 3rem;
+        gap: 1.5rem;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
