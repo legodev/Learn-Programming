@@ -12,7 +12,7 @@
     --tertiary-color: #fceee1;
     --quaternary-color: #fd8086;
     --text-color: #444;
-    --text-color-dm: #888888;
+    --text-color-dm: #bbbbbb;
     /* 888888 de vercel para los p */
 }
 @font-face {
@@ -835,6 +835,10 @@ body.dark .cta {
         width: 100%;
     }
 
+    .learn__container{
+        margin-top: unset;
+    }
+
     .learn__articles {
         grid-auto-flow: column;
         grid-auto-columns: 1fr;
@@ -849,10 +853,9 @@ body.dark .cta {
         gap: 3rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         flex-wrap: wrap;
         align-content: start;
-        text-align: center;
+        text-align: left;
         width: 100%;
     }
 
