@@ -12,8 +12,9 @@
         />
         <script defer src="main.js"></script>
     </head>
-    <body class="dark">
+    <body>
         <header class="hero" id="hero">
+            <section class="div__section1">
             <div class="nav__container">
                 <nav class="nav container">
                     <a href="#hero" class="nav__logo link">LG</a>
@@ -21,6 +22,7 @@
                         <li class="nav__item nav__hidden">
                             <button
                                 class="container-svg svg-background dark-mode"
+                                aria-label="Dark-mode"
                             >
                                 <img
                                     loading="lazy"
@@ -59,7 +61,7 @@
                     </svg>
                 </nav>
             </div>
-
+            </section>
             <section class="hero__main container">
                 <article class="hero__texts">
                     <h1 class="hero__title-container">
@@ -148,48 +150,55 @@
                 </figure>
             </section>
         </header>
+
         <main class="main">
-            <section class="about" id="intro">
-                <article class="about__container container">
-                    <figure class="about__figure">
-                        <img
-                            loading="lazy"
-                            class="about__img"
-                            src="./images/trident-web.jpg"
-                            alt="background-image"
-                        />
-                    </figure>
-                    <article class="about__texts">
-                        <h2 class="about__title subtitle">
-                            Primeros
-                            <span class="about__span stroke-text">pasos</span>
-                        </h2>
-                        <p class="about__paragraph paragraph">
-                            Hay
-                            <span class="p-span"
-                                >tecnologías que son esenciales</span
-                            >
-                            de conocer antes de decidir que rama dentro del
-                            desarrollo web tomar.
-                        </p>
-                        <p class="about__paragraph paragraph">
-                            <span class="p-span">HTML, CSS y JavaScript.</span>
-                            Considerados los pilares fundamentales del
-                            desarrollo web los cuales deberás conocer para tener
-                            una base solida sobre la web.
-                        </p>
-                        <p class="about__paragraph paragraph">
-                            A continuación verás un breve resumen de cada una de
-                            estas tecnologías. Y si te interesa aprender
-                            cualquiera de ellas puedes encontrar
-                            <span class="p-span">
-                                diversos recursos en mi blog
-                            </span>
-                            para empezar.
-                        </p>
+            <div class="div__section">
+                <section class="about" id="intro">
+                    <article class="about__container container">
+                        <figure class="about__figure">
+                            <img
+                                loading="lazy"
+                                class="about__img"
+                                src="./images/trident-web.jpg"
+                                alt="background-image"
+                            />
+                        </figure>
+                        <article class="about__texts">
+                            <h2 class="about__title subtitle">
+                                Primeros
+                                <span class="about__span stroke-text"
+                                    >pasos</span
+                                >
+                            </h2>
+                            <p class="about__paragraph paragraph">
+                                Hay
+                                <span class="p-span"
+                                    >tecnologías que son esenciales</span
+                                >
+                                de conocer antes de decidir que rama dentro del
+                                desarrollo web tomar.
+                            </p>
+                            <p class="about__paragraph paragraph">
+                                <span class="p-span"
+                                    >HTML, CSS y JavaScript.</span
+                                >
+                                Considerados los pilares fundamentales del
+                                desarrollo web los cuales deberás conocer para
+                                tener una base solida sobre la web.
+                            </p>
+                            <p class="about__paragraph paragraph">
+                                A continuación verás un breve resumen de cada
+                                una de estas tecnologías. Y si te interesa
+                                aprender cualquiera de ellas puedes encontrar
+                                <span class="p-span">
+                                    diversos recursos en mi blog
+                                </span>
+                                para empezar.
+                            </p>
+                        </article>
                     </article>
-                </article>
-            </section>
+                </section>
+            </div>
             <section class="trident">
                 <div class="trident__container">
                     <h2 class="trident__title subtitle">
@@ -303,7 +312,7 @@
                             <p class="paragraph">
                                 Así es pequeño saltamontes leíste bien, este
                                 será tu primer lenguaje de programación en el
-                                desarrollo web
+                                desarrollo web.
                             </p>
                             <p class="paragraph">
                                 A diferencia de HTML y CSS, que se centran en la
@@ -335,118 +344,124 @@
                     </article>
                 </div>
             </section>
-            <section class="learn" id="road-map">
-                <div class="learn__container">
-                    <h2 class="subtitle">
-                        Mapa de
-                        <span class="stroke-text">ruta</span>
-                    </h2>
-                    <div class="learn__articles">
-                        <article class="learn__article containers">
-                            <img
-                                loading="lazy"
-                                src="./images/front-end.svg"
-                                class="learn__img"
-                                alt="profile-image"
-                            />
-                            <h2 class="learn__subtitle subtitle">
-                                Desarrollo
-                                <span class="learn__span stroke-text"
-                                    >front-end</span
-                                >
-                            </h2>
-                            <p class="learn__paragraph paragraph">
-                                Esencial para crear la
-                                <span class="p-span">interfaz de usuario</span>
-                                que los usuarios ven y con la que interactúan en
-                                un sitio o aplicación web.
-                            </p>
-                            <p class="learn__paragraph paragraph">
-                                Desde el comportamiento y estética de un simple
-                                botón, hasta el
-                                <span class="p-span">posicionamiento</span>
-                                dentro de los motores de búsqueda y la
-                                <span class="p-span">optimización</span> de tu
-                                sitio web.
-                            </p>
-                            <p class="learn__paragraph paragraph">
-                                Si quieres ver en pantalla la gran mayoría de
-                                cambios que haces, esta es sin duda tu mejor
-                                opción.
-                            </p>
-                        </article>
-                        <article
-                            class="learn__article containers"
-                            id="aprender"
-                        >
-                            <img
-                                loading="lazy"
-                                src="./images/back-end.svg"
-                                class="learn__img"
-                                alt="profile-image"
-                            />
-                            <h2 class="learn__subtitle subtitle">
-                                Desarrollo
-                                <span class="learn__span stroke-text"
-                                    >back-end</span
-                                >
-                            </h2>
-                            <p class="learn__paragraph paragraph">
-                                Fundamental para la
-                                <span class="p-span"
-                                    >funcionalidad y lógica</span
-                                >
-                                detrás de un sitio web.
-                            </p>
-                            <p class="learn__paragraph paragraph">
-                                Los desarrolladores back-end trabajan con
-                                <span class="p-span">servidores</span>,
-                                gestionan
-                                <span class="p-span">bases de datos</span> y
-                                construyen la lógica empresarial que permite que
-                                las aplicaciones web funcionen correctamente.
-                            </p>
-                            <p class="learn__paragraph paragraph">
-                                Si no te interesa tanto lo visual y te gustaría
-                                trabajar más con datos, esta rama es para ti
-                                definitivamente.
-                            </p>
-                        </article>
-                        <article class="learn__article containers">
-                            <img
-                                loading="lazy"
-                                src="./images/full-stack.svg"
-                                class="learn__img"
-                                alt="profile-image"
-                            />
-                            <h2 class="learn__subtitle subtitle">
-                                Desarrollo
-                                <span class="learn__span stroke-text"
-                                    >Full-stack</span
-                                >
-                            </h2>
-                            <p class="learn__paragraph paragraph">
-                                Pueden
-                                <span class="p-span"
-                                    >crear aplicaciones web completas</span
-                                >, desde la interfaz de usuario hasta la lógica
-                                del servidor y la base de datos.
-                            </p>
-                            <p class="learn__paragraph paragraph">
-                                Los desarrolladores full-stack tienen
-                                <span class="p-span">experiencia</span> tanto en
-                                el <span class="p-span">front-end</span> como en
-                                el <span class="p-span">back-end</span>.
-                            </p>
-                            <p class="learn__paragraph paragraph">
-                                Si te gusta tanto el front-end como el back-end
-                                y quieres combinarlos, esta opción es la
-                                indicada.
-                            </p>
-                        </article>
+            <div class="div__section">
+                <section class="learn" id="road-map">
+                    <div class="learn__container">
+                        <h2 class="subtitle">
+                            Mapa de
+                            <span class="stroke-text">ruta</span>
+                        </h2>
+                        <div class="learn__articles">
+                            <article class="learn__article containers">
+                                <img
+                                    loading="lazy"
+                                    src="./images/front-end.svg"
+                                    class="learn__img"
+                                    alt="profile-image"
+                                />
+                                <h2 class="learn__subtitle subtitle">
+                                    Desarrollo
+                                    <span class="learn__span stroke-text"
+                                        >front-end</span
+                                    >
+                                </h2>
+                                <p class="learn__paragraph paragraph">
+                                    Esencial para crear la
+                                    <span class="p-span"
+                                        >interfaz de usuario</span
+                                    >
+                                    que los usuarios ven y con la que
+                                    interactúan en un sitio o aplicación web.
+                                </p>
+                                <p class="learn__paragraph paragraph">
+                                    Desde el comportamiento y estética de un
+                                    simple botón, hasta el
+                                    <span class="p-span">posicionamiento</span>
+                                    dentro de los motores de búsqueda y la
+                                    <span class="p-span">optimización</span> de
+                                    tu sitio web.
+                                </p>
+                                <p class="learn__paragraph paragraph">
+                                    Si quieres ver en pantalla la gran mayoría
+                                    de cambios que haces, esta es sin duda tu
+                                    mejor opción.
+                                </p>
+                            </article>
+                            <article
+                                class="learn__article containers"
+                                id="aprender"
+                            >
+                                <img
+                                    loading="lazy"
+                                    src="./images/back-end.svg"
+                                    class="learn__img"
+                                    alt="profile-image"
+                                />
+                                <h2 class="learn__subtitle subtitle">
+                                    Desarrollo
+                                    <span class="learn__span stroke-text"
+                                        >back-end</span
+                                    >
+                                </h2>
+                                <p class="learn__paragraph paragraph">
+                                    Fundamental para la
+                                    <span class="p-span"
+                                        >funcionalidad y lógica</span
+                                    >
+                                    detrás de un sitio web.
+                                </p>
+                                <p class="learn__paragraph paragraph">
+                                    Los desarrolladores back-end trabajan con
+                                    <span class="p-span">servidores</span>,
+                                    gestionan
+                                    <span class="p-span">bases de datos</span> y
+                                    construyen la lógica empresarial que permite
+                                    que las aplicaciones web funcionen
+                                    correctamente.
+                                </p>
+                                <p class="learn__paragraph paragraph">
+                                    Si no te interesa tanto lo visual y te
+                                    gustaría trabajar más con datos, esta rama
+                                    es para ti definitivamente.
+                                </p>
+                            </article>
+                            <article class="learn__article containers">
+                                <img
+                                    loading="lazy"
+                                    src="./images/full-stack.svg"
+                                    class="learn__img"
+                                    alt="profile-image"
+                                />
+                                <h2 class="learn__subtitle subtitle">
+                                    Desarrollo
+                                    <span class="learn__span stroke-text"
+                                        >Full-stack</span
+                                    >
+                                </h2>
+                                <p class="learn__paragraph paragraph">
+                                    Pueden
+                                    <span class="p-span"
+                                        >crear aplicaciones web completas</span
+                                    >, desde la interfaz de usuario hasta la
+                                    lógica del servidor y la base de datos.
+                                </p>
+                                <p class="learn__paragraph paragraph">
+                                    Los desarrolladores full-stack tienen
+                                    <span class="p-span">experiencia</span>
+                                    tanto en el
+                                    <span class="p-span">front-end</span> como
+                                    en el <span class="p-span">back-end</span>.
+                                </p>
+                                <p class="learn__paragraph paragraph">
+                                    Si te gusta tanto el front-end como el
+                                    back-end y quieres combinarlos, esta opción
+                                    es la indicada.
+                                </p>
+                            </article>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
             <section class="blog" id="blog">
                 <div class="blog__main container">
                     <article class="blog__texts">
@@ -486,81 +501,112 @@
                     </figure>
                 </div>
             </section>
-            <section class="data">
-                <article class="data__articles">
-                    <div class="data__column">
-                        <aside class="data__texts">
-                            <h2 class="data__subtitle subtitle">
-                                sin
-                                <span class="data__span stroke-text"
-                                    >terminar</span
-                                >
-                            </h2>
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing. Laudantium delectus aliquid vero.
-                            </p>
-                        </aside>
-                        <img
-                            loading="lazy"
-                            class="data__img"
-                            src="./images/graph.svg"
-                            alt="Data-img"
-                        />
-                    </div>
-                    <div class="data__column">
-                        <aside class="data__texts">
-                            <h2 class="data__subtitle subtitle">
-                                sin
-                                <span class="data__span stroke-text"
-                                    >terminar</span
-                                >
-                            </h2>
-                            <p class="paragraph">
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Atque maxime ex incidunt.
-                            </p>
-                        </aside>
-                        <img
-                            loading="lazy"
-                            class="data__img"
-                            src="./images/graph.svg"
-                            alt="Data-img"
-                        />
-                    </div>
-                </article>
-            </section>
-
-            <div class="div">
-                <div class="bkg"></div>
+            <div class="div__section">
+                <section class="data">
+                    <article class="data__articles">
+                        <div class="data__column">
+                            <aside class="data__texts">
+                                <h2 class="data__subtitle subtitle">
+                                    sin
+                                    <span class="data__span stroke-text"
+                                        >terminar</span
+                                    >
+                                </h2>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing. Laudantium delectus aliquid
+                                    vero.
+                                </p>
+                            </aside>
+                            <img
+                                loading="lazy"
+                                class="data__img"
+                                src="./images/graph.svg"
+                                alt="Data-img"
+                            />
+                        </div>
+                        <div class="data__column">
+                            <aside class="data__texts">
+                                <h2 class="data__subtitle subtitle">
+                                    sin
+                                    <span class="data__span stroke-text"
+                                        >terminar</span
+                                    >
+                                </h2>
+                                <p class="paragraph">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Atque maxime ex incidunt.
+                                </p>
+                            </aside>
+                            <img
+                                loading="lazy"
+                                class="data__img"
+                                src="./images/graph.svg"
+                                alt="Data-img"
+                            />
+                        </div>
+                    </article>
+                </section>
             </div>
+            <!-- <div class="div">
+                <div class="bkg"></div>
+            </div> -->
         </main>
         <footer class="footer" id="footer">
-            <section class="footer__container container">
-                <ul class="footer__contact">
-                    <li class="footer__item">
-                        <a href="" class="footer__link">
-                            <img
-                                loading="lazy"
-                                src="./icons/twitter.svg"
-                                alt="footer__img"
-                            />
-                        </a>
-                    </li>
-                    <li class="footer__item">
-                        <a href="" class="footer__link">
-                            <img
-                                loading="lazy"
-                                src="./icons/instagram.svg"
-                                alt="footer__img"
-                            />
-                        </a>
-                    </li>
-                </ul>
-                <h4 class="footer__title">
-                    Copyright &copy; Leonardo González
-                </h4>
-            </section>
+            <div class="footer__container">
+                <section class="footer__row">
+                    <article class="footer__links">
+                        <h4 class="footer__title">Compañía</h4>
+                        <ul class="footer__list">
+                            <li><a href="">Nosotros</a></li>
+                            <li><a href="">Nuestros Servicios</a></li>
+                            <li><a href="">Política de privacidad</a></li>
+                            <li><a href="">Únete</a></li>
+                        </ul>
+                    </article>
+                    <article class="footer__links">
+                        <h4 class="footer__title">Blog</h4>
+                        <ul class="footer__list">
+                            <li><a href="">Preguntas Frecuentes</a></li>
+                            <li><a href="">Rutas</a></li>
+                            <li><a href="">Artículos desarrollo</a></li>
+                            <li><a href="">Recursos</a></li>
+                        </ul>
+                    </article>
+                    <article class="footer__links">
+                        <h4 class="footer__title">Sígueme</h4>
+                        <aside class="footer__social-links">
+                            <a aria-label="LinkedIn" href=""
+                                ><svg 
+                                class="footer__icon" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 448 512" 
+                                fill="#bbbbbb">
+                                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                            <a aria-label="Github" href=""
+                                ><svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#bbbbbb"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></a>
+                            <a aria-label="Instagram" href="">
+                                <svg class="footer__icon instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#bbbbbb"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
+                            </a>
+                            <a aria-label="X also know as Twitter" href=""
+                                ><svg 
+                                class="footer__icon" 
+                                xmlns="http://www.w3.org/2000/svg"  
+                                fill="#bbbbbb" 
+                                viewBox="0 0 512 512">
+                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></a>
+                            <a aria-label="Facebook" href="">
+                                <svg 
+                                class="footer__icon" 
+                                xmlns="http://www.w3.org/2000/svg" 
+                                fill="#bbbbbb" 
+                                viewBox="0 0 512 512">
+                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                            </a>
+                        </aside>
+                    </article>
+                </section>
+            </div>
         </footer>
     </body>
 </html>
