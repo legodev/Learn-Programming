@@ -10,6 +10,7 @@
     --secondary-color: #121212;
     --tertiary-color: #fceee1;
     --quaternary-color: #fd8086;
+    --div-section: #fdc9cc;;
     --text-color: #444;
     --text-color-dm: #bbbbbb;
 }
@@ -41,8 +42,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 ::-webkit-scrollbar {
-    background-color: var(--secondary-color);
-    color: red;
+    background-color: #000;
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
@@ -60,17 +60,20 @@ a {
     text-decoration: none;
 }
 .hero {
-    width: 95%;
-    max-width: 75rem;
-    margin: 0 auto 90px auto;
-    padding: 0 15px 0 15px;
+    display: block;
+    margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
-.nav {
+
+.div__section1{
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 100;
+   width: 100%;
+}
+.nav {
     z-index: 100;
     display: flex;
     align-items: center;
@@ -154,6 +157,10 @@ a {
     align-items: center;
     gap: 2.5rem;
     margin-top: 3.75rem;
+    margin: 3.75rem auto 60px auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    width: 95%;
 }
 .hero__texts {
     display: grid;
@@ -167,7 +174,7 @@ a {
 .hero__title {
     font-size: 2.7em;
     line-height: 1.5em;
-    text-align: center;
+    text-align: left;
     color: var(--primary-color);
 }
 .stroke-text {
@@ -291,26 +298,31 @@ body.dark .hero__birds {
 /* MAIN */
 
 .main {
-    width: 95%;
-    max-width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
-    padding: 0 15px 0 15px;
 }
+
+.div__section{
+    background-color: var(--div-section);
+}
+
 .about {
     display: grid;
     place-items: center;
     max-width: 1200px;
     min-height: 100%;
-    margin-bottom: 100px;
+    margin: 0 auto 100px auto;
+    width: 95%;
+    padding: 0 15px 0 15px;
     overflow: hidden;
 }
+
 .about__container {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin: 60px 0;
 }
+
 .about__img {
     display: block;
     width: 90%;
@@ -321,6 +333,7 @@ body.dark .hero__birds {
     object-fit: cover;
     object-position: center;
 }
+
 .about__texts {
     display: grid;
     gap: 2.5rem;
@@ -337,6 +350,15 @@ body.dark .hero__birds {
     line-height: 2em;
     color: var(--text-color);
     text-align: left;
+}
+
+.trident{
+    margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    width: 95%;
+    padding: 0 15px 0 15px;
+    overflow: hidden;
 }
 
 .trident__container{
@@ -371,12 +393,14 @@ body.dark .hero__birds {
 }
 
 .learn {
-    width: 100%;
+    width: 95%;
     display: grid;
     align-items: center;
-    max-width: 1200px;
     min-height: 100%;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 .learn__container {
     margin-top: 60px;
@@ -402,6 +426,13 @@ body.dark .hero__birds {
     margin: 0 auto;
     border-radius: 10px;
 }
+.blog{
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    padding: 0 15px 0 15px;
+    width: 95%;
+}
+
 .blog__main {
     padding-top: 60px;
 }
@@ -427,19 +458,23 @@ body.dark .hero__birds {
     background-color: var(--secondary-color);
     text-transform: uppercase;
 }
-.hero__cta,
-.blog__cta {
+.cta {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Data */
 
+
+
 .data {
     display: grid;
     place-items: center;
-    margin: 100px auto 0 auto;
     text-align: center;
-    width: 100%;
+    max-width: 1200px;
+    width: 95%;
+    padding: 60px 15px 60px 15px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .data__articles {
     display: flex;
@@ -460,36 +495,57 @@ body.dark .hero__birds {
 /* Footer */
 
 .footer {
-    max-width: 1200px;
-    width: 95%;
+    display: grid;
+    place-items: center;
+    padding: 60px 15px 0px 15px;
+}
+
+.footer__row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
-    text-align: center;
-    background-color: wheat;
+   
 }
-.footer__contact {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+
+.footer__links{
+    padding: 0 15px;
+    margin: 20px 0;
 }
-.footer__link {
+
+.footer__list{
+    line-height: 2;
+}
+
+:is(.footer__list li a){
+    color: var(--text-color);
+    transition: color .3s ease;
+}
+
+.footer__title{
+    margin-bottom: 25px;
+    color: var(--secondary-color);
+}
+
+.footer__social-links{
     display: flex;
-    justify-content: center;
+    gap: 15px;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50rem;
-    background-color: var(--color);
 }
+
+.footer__icon{
+    width: 30px;
+    height: 30px;
+    fill: var(--text-color);
+}
+
+
+
 :is(.hero__title-span,.learn__span,.data__span){
     display: block;
 }
-.footer__item:nth-of-type(1) {
-    --color: #1da1f2;
-}
-.footer__item:nth-of-type(2) {
-    --color: #c32aa3;
-}
+
 body.dark {
     background-color: #000000;
     color: var(--text-color-dm);
@@ -530,6 +586,18 @@ body.dark .cta {
     color: var(--secondary-color);
     border: 2px solid transparent;
     z-index: 0;
+}
+body.dark .div__section{
+    background-color: var(--secondary-color);
+}
+body.dark :is(.footer__list li a){
+    color: var(--text-color-dm);
+}
+body.dark .footer__title{
+    color: var(--text-color-dm);
+}
+body.dark .footer__icon{
+    fill: var(--text-color-dm);
 }
 
 @keyframes stroke {
@@ -610,13 +678,13 @@ body.dark .cta {
         font-size: 2.8em;
         margin-top: 60px;
     }
-    .nav {
-        display: flex;
-        inset: unset;
-        max-width: 1200px;
-        background-color: transparent;
+
+    .div__section1{
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
+    }
+    .nav {
+        background-color: transparent;
     }
     .nav__list {
         position: static;
@@ -673,8 +741,8 @@ body.dark .cta {
     .hero__main {
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 3rem;
-        margin-top: 1.5rem;
     }
     .hero__texts {
         justify-items: left;
@@ -723,10 +791,7 @@ body.dark .cta {
     .hero__img {
         max-width: 450px;
     }
-    .main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+
     .about__container {
         flex-direction: row;
         align-items: center;
@@ -831,9 +896,18 @@ body.dark .cta {
         text-align: left;
     }
 
-    .footer__link:hover {
-        opacity: 0.8;
+    .footer__row{
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
+
+    :is(.footer__list li a):hover{
+        color: var(--primary-color);
+    }
+    .footer__icon:hover{
+        fill: var(--secondary-color);
+    }
+
 
     body.dark .nav__logo {
         color: transparent;
@@ -848,13 +922,10 @@ body.dark .cta {
         color: var(--primary-color);
         border: 2px solid var(--primary-color);
     }
-
-    
+    body.dark .footer__icon:hover{
+        fill: #ffffff;
+    }
+    body.dark :is(.footer__list li a):hover{
+        color: var(--primary-color);
+    }    
 }
-.div {
-    height: 200vh;
-    background-color: #000;
-    display: grid;
-    place-items: center;
-}
-
