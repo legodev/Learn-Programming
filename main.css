@@ -149,8 +149,6 @@ a {
     height: 2.4125rem;
 }
 
-/* hero main */
-
 .hero__main {
     display: flex;
     flex-direction: column;
@@ -292,8 +290,6 @@ body.dark .hero__birds {
         opacity: 0;
     }
 }
-
-/* MAIN */
 
 .main {
     margin: 0 auto;
@@ -460,10 +456,6 @@ body.dark .hero__birds {
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Data */
-
-
-
 .data {
     display: grid;
     place-items: center;
@@ -489,8 +481,6 @@ body.dark .hero__birds {
     max-width: 280px;
     width: 100%;
 }
-
-/* Footer */
 
 .footer {
     display: grid;
